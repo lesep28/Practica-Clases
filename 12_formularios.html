@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios Html</title>
+  </head>
+  <body>
+    <h1>FORMULARIOS HTML</h1>
+    <form method="GET" action="controller_usuarios.java" autocomplete="off">
+      <input type="hidden" id="codigo" name="codigo" value="500" />
+
+      <fieldset>
+        <legend>DATOS PERSONALES</legend>
+        <label for="nombre">Nombres:</label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          size="60"
+          placeholder="Ingrese sus nombres"
+          value="Jhon"
+          tabindex="1"
+          required
+        />
+        <br /><br />
+        <label for="apellidos">Apellidos:</label><br />
+        <input
+          type="text"
+          id="apellidos"
+          name="apellidos"
+          size="60"
+          placeholder="Ingrese sus apellidos"
+          tabindex="2"
+          required
+        />
+        <br /><br />
+        <label for="correo">Email:</label><br />
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          size="60"
+          placeholder="Ingrese su email"
+          tabindex="3"
+          required
+        />
+        <br /><br />
+        <label>Edad:</label><br />
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          size="20"
+          placeholder="Ingrese su edad"
+          tabindex="4"
+          required
+        />
+        <br /><br />
+        <label>Genero</label><br />
+        <input
+          type="radio"
+          id="femenino"
+          name="genero"
+          value="f"
+          tabindex="5"
+        />
+        <label for="femenino">femenino</label>
+
+        <input
+          type="radio"
+          name="genero"
+          id="masculino"
+          value="m"
+          tabindex="6"
+        />
+        <label for="masculino">Masculino</label>
+
+        <br /><br />
+        <label>Música Favorita</label><br />
+        <input
+          type="checkbox"
+          name="musica"
+          id="clasica"
+          value="clasica"
+          tabindex="7"
+        />
+        <label for="clasica">Clásica</label><br />
+
+        <input
+          type="checkbox"
+          name="musica"
+          id="vallenato"
+          value="vallenato"
+          tabindex="8"
+        />
+        <label for="vallenato">Vallenato</label><br />
+
+        <input
+          type="checkbox"
+          name="musica"
+          id="salsa"
+          value="salsa"
+          tabindex="9"
+        />
+        <label for="salsa">Salsa</label>
+
+        <br /><br />
+        <label for="">Marcas de Ropa</label><br />
+        <select name="ropa" id="ropa" tabindex="10">
+          <option value="adidas">Adidas</option>
+          <option value="nike">Nike</option>
+          <option value="lacoste" selected="true">Lacoste</option>
+        </select>
+
+        <br /><br />
+        <label for="">Observaciones</label><br />
+        <textarea name="observaciones" id="" cols="50" rows="10" required></textarea>
+        <br /><br />
+
+        <button type="submit">Guardar</button>
+        <button type="reset">Cancelar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

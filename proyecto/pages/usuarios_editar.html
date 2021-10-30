@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuarios Editar</title>
+  </head>
+  <body>
+    <section>
+      <h1>EDICIÓN DE USUARIOS</h1>
+      <fieldset>
+        <legend>DATOS BÁSICOS</legend>
+        <form action="" method="POST" autocomplete="off">
+          <label for="codperfil">Seleccione el Perfil</label><br /><br />
+          <select name="codperfil" id="codperfil">
+            <option value="1" selected="true">Administrador</option>
+            <option value="2">Estudiante</option>
+            <option value="3">Docente</option>
+            <option value="4">Tesorero</option>
+          </select>
+          <br /><br />
+          <label for="nombres">Nombres</label><br />
+          <input
+            type="text"
+            name="nombres"
+            id="nombres"
+            placeholder="Ingrese el nombre"
+            tabindex="1"
+            size="60"
+            required
+            value="Elizabeth"
+          />
+          <br /><br />
+          <label for="apellidos">Apellidos</label><br />
+          <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Ingrese los apellidos"
+            tabindex="2"
+            size="60"
+            required
+            value="Peña Cogollo"
+          />
+          <br /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Ingrese el email"
+            tabindex="3"
+            size="60"
+            required
+            value="lesep.28@gmail.com"
+          />
+          <br /><br />
+          <label for="celular">Celular</label><br />
+          <input
+            type="number"
+            name="celular"
+            id="celular"
+            placeholder="Ingrese el número de celular"
+            tabindex="4"
+            size="60"
+            required
+            value="3116789986"
+          />
+          <br /><br />
+          <label for="direccion">Dirección</label><br />
+          <textarea
+            type="number"
+            name="direccion"
+            id="direccion"
+            cols="50"
+            rows="5"
+            placeholder="Ingrese la dirección"
+            tabindex="5"
+            required
+            >Calle 100 # 25 -37</textarea>
+            <br /><br />
+            <button type="submit">Gurdar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+      </fieldset>
+    </section>
+  </body>
+</html>
